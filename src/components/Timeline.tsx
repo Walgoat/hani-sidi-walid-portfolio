@@ -5,6 +5,8 @@ import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeli
 import 'react-vertical-timeline-component/style.min.css';
 import '../assets/styles/Timeline.scss';
 
+declare module 'react-vertical-timeline-component';
+
 function Timeline() {
   return (
     <div id="history">
@@ -17,7 +19,7 @@ function Timeline() {
             contentArrowStyle={{ borderRight: '7px solid white' }}
             date="Mars 2024 - Octobre 2024"
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
-            icon={<FontAwesomeIcon icon={faBriefcase} />} // Correction ici
+            icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
             <h3 className="vertical-timeline-element-title">Stage Data Scientist et Ingénieur Cybersécurité</h3>
             <h4 className="vertical-timeline-element-subtitle">Vinci Energies, Harlieur</h4>
@@ -29,7 +31,7 @@ function Timeline() {
             className="vertical-timeline-element--work"
             date="Mars 2023 - Août 2023"
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
-            icon={<FontAwesomeIcon icon={faBriefcase} />} // Correction ici
+            icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
             <h3 className="vertical-timeline-element-title">Stage Ingénieur en Pilotage de Projets et Analyse de Données</h3>
             <h4 className="vertical-timeline-element-subtitle">Safran Nacelles, Gonfreville l'Orcher</h4>
@@ -41,7 +43,7 @@ function Timeline() {
             className="vertical-timeline-element--work"
             date="Mars 2021 - Juillet 2021"
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
-            icon={<FontAwesomeIcon icon={faBriefcase} />} // Correction ici
+            icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
             <h3 className="vertical-timeline-element-title">Stage Technicien de Maintenance</h3>
             <h4 className="vertical-timeline-element-subtitle">Transdev, Le Havre</h4>
@@ -53,7 +55,7 @@ function Timeline() {
             className="vertical-timeline-element--work"
             date="Janvier 2020 - Présent"
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
-            icon={<FontAwesomeIcon icon={faBriefcase} />} // Correction ici
+            icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
             <h3 className="vertical-timeline-element-title">Freelance Développeur Web</h3>
             <h4 className="vertical-timeline-element-subtitle">Walgoat, Le Havre</h4>
