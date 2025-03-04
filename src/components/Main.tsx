@@ -8,7 +8,7 @@ function Main() {
     <div className="container">
       <div className="about-section">
         <div className="image-wrapper">
-          <img src="https://i.imgur.com/vv9WGOy.jpeg" alt="Avatar" /> {/* Remplace par ton lien de photo */}
+          <img src="https://i.imgur.com/vv9WGOy.jpeg" alt="Avatar" /> {/*  */}
         </div>
         <div className="content">
           <div className="social_icons">
