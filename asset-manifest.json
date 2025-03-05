@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/hani-sidi-walid-portfolio/static/css/main.7289fc39.css",
-    "main.js": "/hani-sidi-walid-portfolio/static/js/main.957edd30.js",
+    "main.css": "/hani-sidi-walid-portfolio/static/css/main.4d69692b.css",
+    "main.js": "/hani-sidi-walid-portfolio/static/js/main.5b76bbd1.js",
     "static/js/453.b57413b9.chunk.js": "/hani-sidi-walid-portfolio/static/js/453.b57413b9.chunk.js",
     "static/media/mock04.png": "/hani-sidi-walid-portfolio/static/media/mock04.f7b5679efade992a078c.png",
     "static/media/bg-light.png": "/hani-sidi-walid-portfolio/static/media/bg-light.bac0efb485244a522981.png",
@@ -12,12 +12,12 @@
     "static/media/mock02.png": "/hani-sidi-walid-portfolio/static/media/mock02.bced48ae9cdda3acf1a3.png",
     "static/media/mock03.png": "/hani-sidi-walid-portfolio/static/media/mock03.a4600719e0b5d2a3155b.png",
     "index.html": "/hani-sidi-walid-portfolio/index.html",
-    "main.7289fc39.css.map": "/hani-sidi-walid-portfolio/static/css/main.7289fc39.css.map",
-    "main.957edd30.js.map": "/hani-sidi-walid-portfolio/static/js/main.957edd30.js.map",
+    "main.4d69692b.css.map": "/hani-sidi-walid-portfolio/static/css/main.4d69692b.css.map",
+    "main.5b76bbd1.js.map": "/hani-sidi-walid-portfolio/static/js/main.5b76bbd1.js.map",
     "453.b57413b9.chunk.js.map": "/hani-sidi-walid-portfolio/static/js/453.b57413b9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7289fc39.css",
-    "static/js/main.957edd30.js"
+    "static/css/main.4d69692b.css",
+    "static/js/main.5b76bbd1.js"
   ]
 }
