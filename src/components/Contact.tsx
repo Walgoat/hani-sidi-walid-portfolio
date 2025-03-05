@@ -14,14 +14,20 @@ function Contact() {
   const [emailError, setEmailError] = useState<boolean>(false);
   const [messageError, setMessageError] = useState<boolean>(false);
 
-  const form = useRef();
+  const form = useRef<HTMLFormElement>(null);
 
-  const sendEmail = (e: any) => {
+  const sendEmail = (e: React.FormEvent) => {
     e.preventDefault();
 
+    // Validation des champs
     setNameError(name === '');
     setEmailError(email === '');
     setMessageError(message === '');
+
+    if (name && email && message) {
+      console.log('Formulaire soumis avec succès !');
+      // Ici, vous pouvez ajouter la logique pour envoyer l'email
+    }
   };
 
   return (
@@ -36,36 +42,46 @@ function Contact() {
             noValidate
             autoComplete="off"
             className='contact-form'
+            onSubmit={sendEmail}
           >
             <div className='form-flex'>
               <TextField
                 required
-                id="outlined-required"
+                id="name-field"
+                name="name"
                 label="Votre nom"
                 placeholder="Quel est votre nom ?"
                 value={name}
                 onChange={(e) => {
                   setName(e.target.value);
+                  console.log('Nom:', e.target.value); // Vérification
+                  setNameError(false); // Réinitialiser l'erreur lors de la saisie
                 }}
                 error={nameError}
                 helperText={nameError ? "Veuillez entrer votre nom" : ""}
+                autoComplete="name"
               />
               <TextField
                 required
-                id="outlined-required"
+                id="contact-field"
+                name="contact"
                 label="Email / Téléphone"
                 placeholder="Comment puis-je vous contacter ?"
                 value={email}
                 onChange={(e) => {
                   setEmail(e.target.value);
+                  console.log('Email:', e.target.value); // Vérification
+                  setEmailError(false); // Réinitialiser l'erreur lors de la saisie
                 }}
                 error={emailError}
                 helperText={emailError ? "Veuillez entrer votre email ou numéro de téléphone" : ""}
+                autoComplete="email"
               />
             </div>
             <TextField
               required
-              id="outlined-multiline-static"
+              id="message-field"
+              name="message"
               label="Message"
               placeholder="Envoyez-moi vos questions ou demandes"
               multiline
@@ -74,11 +90,14 @@ function Contact() {
               value={message}
               onChange={(e) => {
                 setMessage(e.target.value);
+                console.log('Message:', e.target.value); // Vérification
+                setMessageError(false); // Réinitialiser l'erreur lors de la saisie
               }}
               error={messageError}
               helperText={messageError ? "Veuillez entrer un message" : ""}
+              autoComplete="off"
             />
-            <Button variant="contained" endIcon={<SendIcon />} onClick={sendEmail}>
+            <Button variant="contained" endIcon={<SendIcon />} type="submit">
               Envoyer
             </Button>
           </Box>

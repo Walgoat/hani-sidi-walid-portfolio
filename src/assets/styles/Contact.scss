@@ -46,3 +46,16 @@ form {
   width: 100% !important;
   margin-bottom: 15px !important;
 }
+
+/* Ajout de styles pour s'assurer que les champs de texte sont visibles et interactifs */
+.MuiTextField-root {
+  width: 100%;
+}
+
+.MuiInputBase-root {
+  background-color: white;
+}
+
+.MuiInputBase-input {
+  color: #050f0b;
+}
