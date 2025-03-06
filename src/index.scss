@@ -6,6 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 1.1rem !important;
+  color: #000; // Couleur du texte par défaut
 }
 
 code {
@@ -16,7 +17,6 @@ code {
 .main-container {
   position: relative;
   background-color: #0d1116;
-
 }
 
 a {

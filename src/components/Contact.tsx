@@ -1,32 +1,32 @@
-import React, { useRef, useState } from 'react';
-import '../assets/styles/Contact.scss';
-import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
-import SendIcon from '@mui/icons-material/Send';
-import TextField from '@mui/material/TextField';
+import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
+import SendIcon from "@mui/icons-material/Send";
+import TextField from "@mui/material/TextField";
+import emailjs from "emailjs-com";
+import { useRef } from "react";
+import Grid from "@mui/material/Grid"; // Importez le composant Grid
 
 function Contact() {
-  const [name, setName] = useState<string>('');
-  const [email, setEmail] = useState<string>('');
-  const [message, setMessage] = useState<string>('');
-
-  const [nameError, setNameError] = useState<boolean>(false);
-  const [emailError, setEmailError] = useState<boolean>(false);
-  const [messageError, setMessageError] = useState<boolean>(false);
-
   const form = useRef<HTMLFormElement>(null);
 
   const sendEmail = (e: React.FormEvent) => {
     e.preventDefault();
 
-    // Validation des champs
-    setNameError(name === '');
-    setEmailError(email === '');
-    setMessageError(message === '');
-
-    if (name && email && message) {
-      console.log('Formulaire soumis avec succès !');
-      // Ici, vous pouvez ajouter la logique pour envoyer l'email
+    if (form.current) {
+      emailjs
+        .sendForm(
+          "service_ndpdnoc",
+          "template_e4ilka3",
+          form.current,
+          "AekYDn0jA9RlCSWi8"
+        )
+        .then(() => {
+          alert("Message envoyé avec succès !");
+          form.current?.reset();
+        })
+        .catch(() => {
+          alert("Une erreur est survenue lors de l'envoi du message.");
+        });
     }
   };
 
@@ -35,71 +35,60 @@ function Contact() {
       <div className="items-container">
         <div className="contact_wrapper">
           <h1>Contactez-moi</h1>
-          <p>Vous avez un projet à réaliser ? Collaborons ensemble pour le concrétiser !</p>
+          <p>
+            Vous avez un projet à réaliser ? Collaborons ensemble pour le concrétiser !
+          </p>
           <Box
             ref={form}
             component="form"
             noValidate
             autoComplete="off"
-            className='contact-form'
+            className="contact-form"
             onSubmit={sendEmail}
           >
-            <div className='form-flex'>
-              <TextField
-                required
-                id="name-field"
-                name="name"
-                label="Votre nom"
-                placeholder="Quel est votre nom ?"
-                value={name}
-                onChange={(e) => {
-                  setName(e.target.value);
-                  console.log('Nom:', e.target.value); // Vérification
-                  setNameError(false); // Réinitialiser l'erreur lors de la saisie
-                }}
-                error={nameError}
-                helperText={nameError ? "Veuillez entrer votre nom" : ""}
-                autoComplete="name"
-              />
-              <TextField
-                required
-                id="contact-field"
-                name="contact"
-                label="Email / Téléphone"
-                placeholder="Comment puis-je vous contacter ?"
-                value={email}
-                onChange={(e) => {
-                  setEmail(e.target.value);
-                  console.log('Email:', e.target.value); // Vérification
-                  setEmailError(false); // Réinitialiser l'erreur lors de la saisie
-                }}
-                error={emailError}
-                helperText={emailError ? "Veuillez entrer votre email ou numéro de téléphone" : ""}
-                autoComplete="email"
-              />
-            </div>
+            <Grid container spacing={2}>
+              <Grid item xs={12} sm={6}>
+                <TextField
+                  required
+                  label="Votre nom"
+                  name="name"
+                  autoComplete="name"
+                  fullWidth
+                  InputProps={{ style: { backgroundColor: "white" } }}
+                />
+              </Grid>
+              <Grid item xs={12} sm={6}>
+                <TextField
+                  required
+                  label="Email / Téléphone"
+                  name="contact"
+                  autoComplete="email"
+                  fullWidth
+                  InputProps={{ style: { backgroundColor: "white" } }}
+                />
+              </Grid>
+            </Grid>
             <TextField
               required
-              id="message-field"
-              name="message"
               label="Message"
-              placeholder="Envoyez-moi vos questions ou demandes"
+              name="message"
               multiline
               rows={10}
-              className="body-form"
-              value={message}
-              onChange={(e) => {
-                setMessage(e.target.value);
-                console.log('Message:', e.target.value); // Vérification
-                setMessageError(false); // Réinitialiser l'erreur lors de la saisie
-              }}
-              error={messageError}
-              helperText={messageError ? "Veuillez entrer un message" : ""}
               autoComplete="off"
+              fullWidth
+              InputProps={{ style: { backgroundColor: "white" } }}
+              sx={{ mt: 2 }} // Espacement en haut
             />
-            <Button variant="contained" endIcon={<SendIcon />} type="submit">
-              Envoyer
-            </Button>
+            {/* Utilisez Box pour aligner le bouton à droite */}
+            <Box sx={{ display: "flex", justifyContent: "flex-end", mt: 2 }}>
+              <Button
+                variant="contained"
+                endIcon={<SendIcon />}
+                type="submit"
+              >
+                Envoyer
+              </Button>
+            </Box>
           </Box>
         </div>
       </div>
