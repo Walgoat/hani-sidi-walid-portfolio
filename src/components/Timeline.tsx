@@ -17,16 +17,32 @@ function Timeline() {
             className="vertical-timeline-element--work"
             contentStyle={{ background: 'white', color: 'rgb(39, 40, 34)' }}
             contentArrowStyle={{ borderRight: '7px solid white' }}
-            date="Mars 2024 - Octobre 2024"
+            date="Nov. 2024 - Avr. 2025"
+            iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
+            icon={<FontAwesomeIcon icon={faBriefcase} />}
+          >
+            <h3 className="vertical-timeline-element-title">AI Engineer Freelance</h3>
+            <h4 className="vertical-timeline-element-subtitle">Outlier, Remote</h4>
+            <p>
+              Conception et optimisation de prompts pour modèles d'IA générative. Analyse des performances et ajustements pour améliorer la pertinence des réponses. Documentation des méthodologies et collaboration avec des équipes techniques.
+            </p>
+          </VerticalTimelineElement>
+
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            contentStyle={{ background: 'white', color: 'rgb(39, 40, 34)' }}
+            contentArrowStyle={{ borderRight: '7px solid white' }}
+            date="Mars 2024 - Oct. 2024"
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
             <h3 className="vertical-timeline-element-title">Stage Data Scientist et Ingénieur Cybersécurité</h3>
-            <h4 className="vertical-timeline-element-subtitle">Vinci Energies, Harlieur</h4>
+            <h4 className="vertical-timeline-element-subtitle">Vinci Energies, Harfleur</h4>
             <p>
               Digitalisation des contrats de maintenance, création de codes d'optimisation des processus industriels, conception de tableaux de bord dynamiques avec Power BI, et élaboration de stratégies pour intégrer la performance énergétique et la cybersécurité.
             </p>
           </VerticalTimelineElement>
+
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             date="Mars 2023 - Août 2023"
@@ -39,9 +55,10 @@ function Timeline() {
               Mise en place d'un outil de pilotage de projet, conception d'architectures de bases de données, et création de KPI avec Power BI pour optimiser la visualisation des données.
             </p>
           </VerticalTimelineElement>
+
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="Mars 2021 - Juillet 2021"
+            date="Mars 2021 - Juil. 2021"
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
@@ -51,9 +68,10 @@ function Timeline() {
               Maintenance dans le secteur du courant faible, redémarrage de valideurs de titre de transport, réseau et caméras de surveillance.
             </p>
           </VerticalTimelineElement>
+
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="Janvier 2020 - Présent"
+            date="Janv. 2020 - Présent"
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
