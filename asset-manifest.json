@@ -1,23 +1,25 @@
 {
   "files": {
     "main.css": "/hani-sidi-walid-portfolio/static/css/main.7b2a72c7.css",
-    "main.js": "/hani-sidi-walid-portfolio/static/js/main.8864a3a1.js",
+    "main.js": "/hani-sidi-walid-portfolio/static/js/main.d556ecdc.js",
     "static/js/453.b57413b9.chunk.js": "/hani-sidi-walid-portfolio/static/js/453.b57413b9.chunk.js",
-    "static/media/mock04.png": "/hani-sidi-walid-portfolio/static/media/mock04.f7b5679efade992a078c.png",
+    "static/media/mock01.png": "/hani-sidi-walid-portfolio/static/media/mock01.6f5aa47ad184ad583568.png",
+    "static/media/mock04.png": "/hani-sidi-walid-portfolio/static/media/mock04.77664286d483a95638da.png",
+    "static/media/mock03.png": "/hani-sidi-walid-portfolio/static/media/mock03.a9041e79dee592b17a52.png",
     "static/media/bg-light.png": "/hani-sidi-walid-portfolio/static/media/bg-light.bac0efb485244a522981.png",
-    "static/media/mock05.png": "/hani-sidi-walid-portfolio/static/media/mock05.4faafa70d200d1519a34.png",
-    "static/media/mock06.png": "/hani-sidi-walid-portfolio/static/media/mock06.ea816617e0d0fa0f63ca.png",
     "static/media/bg-dark.png": "/hani-sidi-walid-portfolio/static/media/bg-dark.f420c6b8458af72de935.png",
-    "static/media/mock01.png": "/hani-sidi-walid-portfolio/static/media/mock01.61bd486a54bf6e17ee5a.png",
-    "static/media/mock02.png": "/hani-sidi-walid-portfolio/static/media/mock02.bced48ae9cdda3acf1a3.png",
-    "static/media/mock03.png": "/hani-sidi-walid-portfolio/static/media/mock03.a4600719e0b5d2a3155b.png",
+    "static/media/mock02.png": "/hani-sidi-walid-portfolio/static/media/mock02.d10e6840de611cf5eb2a.png",
+    "static/media/mock07.png": "/hani-sidi-walid-portfolio/static/media/mock07.7f02addbde7217711c85.png",
+    "static/media/mock08.png": "/hani-sidi-walid-portfolio/static/media/mock08.382d5379ce26cfc83138.png",
+    "static/media/mock06.png": "/hani-sidi-walid-portfolio/static/media/mock06.fb3c1d7c93cfc45eb378.png",
+    "static/media/mock05.png": "/hani-sidi-walid-portfolio/static/media/mock05.ec80efb82555f2e4aa8a.png",
     "index.html": "/hani-sidi-walid-portfolio/index.html",
     "main.7b2a72c7.css.map": "/hani-sidi-walid-portfolio/static/css/main.7b2a72c7.css.map",
-    "main.8864a3a1.js.map": "/hani-sidi-walid-portfolio/static/js/main.8864a3a1.js.map",
+    "main.d556ecdc.js.map": "/hani-sidi-walid-portfolio/static/js/main.d556ecdc.js.map",
     "453.b57413b9.chunk.js.map": "/hani-sidi-walid-portfolio/static/js/453.b57413b9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7b2a72c7.css",
-    "static/js/main.8864a3a1.js"
+    "static/js/main.d556ecdc.js"
   ]
 }
